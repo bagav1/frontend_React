@@ -8,7 +8,7 @@ import axios from 'axios';
       headers: {
           'X-Requested-With': 'XMLHttpRequest',
           'Accept': 'application/json',
-          'Content-Type': 'application/json;multipart/form-data'
+          'Content-Type': 'application/json'
       }
   }).catch(function (error) {
       console.log(error);
