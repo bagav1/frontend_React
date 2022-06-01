@@ -36,7 +36,7 @@ export default function List() {
               <td key={person.lastname}>{person.lastname}</td>
               <td key={person.email}>{person.email}</td>
               <td key={person.salary}>{person.salary}</td>
-              <td key={person.id}><Button variant="primary" onClick={() => {setModalShow(true); setPerson(person)}}>Submit</Button></td>
+              <td key={person.id}><Button variant="primary" onClick={() => {setModalShow(true); setPerson(person)}}>Ver</Button></td>
             </tr>
           )}
         </tbody>

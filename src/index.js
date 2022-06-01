@@ -3,15 +3,23 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import List from './components/List';
+import TableCreated from './components/formCreate';
+import { Row, Col, Container } from 'react-bootstrap';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <List/>
-  /* <React.StrictMode>
-  </React.StrictMode> */
+  <Container>
+  <Row>
+    <Col lg={6}>
+      <h3 style={{textAlign: 'center'}}>Lista</h3>
+      <List />
+    </Col>
+    <Col lg={{ span: 5, offset: 1 }}>
+      <h3 style={{textAlign: 'center'}}>Crear nuevo registro</h3>
+      <TableCreated />
+    </Col>
+  </Row>
+  </Container>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
